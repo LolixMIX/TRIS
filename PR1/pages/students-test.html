@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оценка норматива</title>
+    <nav>
+        <ul>
+            <li><a href="calc.html">Калькулятор</a></li>
+            <li><a href="auto-detect.html">Автофиксатор</a></li>
+            <li><a href="students-test.html">Нормативы</a></li>
+            <li><a href="longest-word.html">Самое длинное слово</a></li>
+            <li><a href="validate.html">Валидатор</a></li>
+
+          </ul>
+    </nav>
+</head>
+
+<body>
+    <h1>Оценка норматива</h1>
+
+    <form id="studentsForm">
+        <div>
+            Введите количество студентов: <input type="number" min="1" id="quantity" required>
+        </div>
+        <input type="submit" value="Отправить">
+
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Подтягиваний</th>
+                <th>Оценка</th>
+            </tr>
+        </thead>
+        <tbody id="rating">
+        </tbody>
+    </table>
+    
+    
+    <div id="score">
+        
+    </div>
+    <script src="../scripts/students-test.js"></script>
+
+</body>
+
+</html>

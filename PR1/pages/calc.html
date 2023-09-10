@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <nav>
+        <ul>
+            <li><a href="calc.html">Калькулятор</a></li>
+            <li><a href="auto-detect.html">Автофиксатор</a></li>
+            <li><a href="students-test.html">Нормативы</a></li>
+            <li><a href="longest-word.html">Самое длинное слово</a></li>
+            <li><a href="validate.html">Валидатор</a></li>
+
+          </ul>
+    </nav>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Калькулятор ремонта</h1>
+    </div>
+    <div>
+        Длина стен <input type="number" id="lengthWall" min="1" placeholder="Длина" required>
+    </div>
+    <div>
+        Ширина стен <input type="number" id="widthWall" min="1" size="1" placeholder="Ширина" required>
+    </div>
+    <div>
+        Высота потолка <input type="number" id="hight" min="1" size="1" placeholder="Высота" required>
+    </div>
+    ====================
+    <div>
+        Тип работы <select name="typeOfWork" id="typeOfWork">
+            <option>Обои</option>
+            <option>Краска</option>
+        </select>
+    </div>
+    ====================
+    <div id="wallpaper" style="display:block;">
+        <div>
+            Ширина обоев <input type="number" min="1" id="widthtWallpaper" size="1">
+        </div>
+        <div>
+            Длина обоев <input type="number" min="1" id="lengthWallpaper" size="1">
+        </div>
+        <div>
+            Стоимость рулона обоев <input type="number" min="1" id="priceWallpaper" size="1">
+        </div>
+    </div>
+    ====================
+    <div id="paints" style="display:none;">
+        <div>
+            <div>
+                Расход краски на 1 м^2 <input type="number" min="1" id="paintСonsumption" size="1">
+            </div>
+            <div>
+                Стоимость литра краски <input type="number" min="1" id="pricePaints" size="1">
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="calcButton">Рассчитать</button>
+    </div>
+
+    <div id="result" style="display:none;">
+        <h2>Результат:</h2>
+        <p>Периметр <span id="perimeter"></span> m</p>
+        <p>Площадь <span id="area"></span> m2</p>
+        <p>Необходимое количество: <span id="quantity"></span></p>
+        <p>Стоимость: <span id="cost"></span> руб</p>
+    </div>
+    
+    <script src="../scripts/calc.js"></script>
+</body>
+
+</html>
