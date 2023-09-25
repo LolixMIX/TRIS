@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Поездка в такси</p>
+    <div>
+        <form id="person_form">
+            Введите имя: <input type="text" id="user_name" required>
+            <div>
+                Тип: <select id="type_of_person">
+                    <option>PASSAGER</option>
+                    <option>EMPLOYEE</option>
+                </select>
+            </div>
+            <div id="distance_block">
+                Дистанция: <input type="number" min="0" id="distance" required> км.
+            </div>
+            <div id="car_number">
+                Дистанция: <input type="number" min="0" id="distance" required> км.
+            </div>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div id="passagers_block">
+        <ul id="passagers_list">
+            
+        </ul>
+    </div>
+    <div id="drivers_block">
+        <ul id="drivers_list">
+            
+        </ul>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
