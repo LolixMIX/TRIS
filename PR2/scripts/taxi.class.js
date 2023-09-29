@@ -50,7 +50,7 @@ class Taxi {
         if (!this.employee) {
             return `Водитель не назначен`;
         }
-        return `Водитель ${(_a = this.employee) === null || _a === void 0 ? void 0 : _a.getName()};\nНомер автомобиля ${this.carNumber};\nПассажиры: ${this.passengers.map(item => item.getName()).join(', ')};\n`;
+        return `Водитель ${(_a = this.employee) === null || _a === void 0 ? void 0 : _a.getName()};\nНомер автомобиля ${this.carNumber};\nПассажиры: ${this.passengers.map(item => `${item.getName()} ${item.getAge()}`)};\n`;
     }
 }
 exports.Taxi = Taxi;

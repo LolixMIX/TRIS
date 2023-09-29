@@ -11,9 +11,18 @@ class Person {
     getName() {
         return this.name;
     }
-    constructor(name, personType, distance) {
+    getAge() {
+        return this.age;
+    }
+    constructor(name, age, personType, distance) {
         this.distance = 0;
         this.name = name;
+        if (Math.sign(age) === 1) {
+            this.age = age;
+        }
+        else {
+            throw new Error(`Возраст не может быть отрицательным`);
+        }
         if (personType === PersType.EMPLOYEE) {
             this.personType = personType;
         }

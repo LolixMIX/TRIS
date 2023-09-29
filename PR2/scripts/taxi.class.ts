@@ -58,7 +58,7 @@ class Taxi {
         if (!this.employee) {
             return `Водитель не назначен`
         }
-        return `Водитель ${this.employee?.getName()};\nНомер автомобиля ${this.carNumber};\nПассажиры: ${this.passengers.map(item => item.getName()).join(', ')};\n`
+        return `Водитель ${this.employee?.getName()};\nНомер автомобиля ${this.carNumber};\nПассажиры: ${this.passengers.map(item => `${item.getName()} ${item.getAge()}`)};\n`
     }
 }
 
