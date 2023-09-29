@@ -8,6 +8,9 @@ class Person {
         }
         return 0;
     }
+    getName() {
+        return this.name;
+    }
     constructor(name, personType, distance) {
         this.distance = 0;
         this.name = name;
@@ -25,5 +28,4 @@ var PersType;
 (function (PersType) {
     PersType["PASSEGER"] = "PASSEGER";
     PersType["EMPLOYEE"] = "EMPLOYEE";
-})(PersType || (PersType = {}));
-exports.PersType = PersType;
+})(PersType || (exports.PersType = PersType = {}));

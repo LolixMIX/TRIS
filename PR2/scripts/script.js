@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
         if (typeOfPerson.value === "EMPLOYEE") {
             const person = new person_class_1.Person(userName.value, person_class_1.PersType.EMPLOYEE);
-            const newTaxi = new taxi_class_1.Taxi(parseFloat(carNumber.value), person);
+            const newTaxi = new taxi_class_1.Taxi();
             drivers.push(newTaxi);
             driversList.innerHTML = "";
             drivers.forEach(driver => {

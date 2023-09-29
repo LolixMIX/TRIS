@@ -1,6 +1,6 @@
 class Person {
-    name: string;
-    personType: PersType;
+    private name: string;
+    public personType: PersType;
     private distance: number = 0;
 
     public getDistance(): number {
@@ -8,6 +8,9 @@ class Person {
             return Number(this.distance);
         }
         return 0;
+    }
+    public getName(): string {
+        return this.name;
     }
     constructor(name: string, personType: PersType, distance?: number) {
         this.name = name;
@@ -21,11 +24,9 @@ class Person {
     }
 }
 
-
 enum PersType {
     PASSEGER = "PASSEGER",
     EMPLOYEE = "EMPLOYEE"
 }
-
 
 export { PersType, Person }
